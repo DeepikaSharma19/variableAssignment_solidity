@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+contract  varContract {
+    uint number;
+    int myNumber;
+    address myAddress;
+    bool val;
+
+    function setVars(uint _number,  int _myNumber , address _myAddress, bool _val) public {
+      number = _number;
+      myNumber = _myNumber;
+      myAddress =  _myAddress;
+      val = _val;
+    }
+    function getVars() public view returns  (uint, int, address, bool){
+        return (number, myNumber, myAddress, val);
+    }
+}
