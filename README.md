@@ -1,0 +1,1 @@
+# variableAssignment_solidity
